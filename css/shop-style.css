@@ -1,0 +1,269 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ------------------------ヘッダー-------------------- */
+.header {
+  background: url("../img/photo004.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  /* background-color: pink; */
+}
+
+.header1 {
+  background-color: rgb(140, 151, 151);
+  height: 60px;
+  opacity: .5;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  /* background-color: aqua; */
+  padding-left: 100px;
+}
+
+.header-right {
+  width: 440px;
+  /* background-color: blueviolet; */
+
+  display: flex;
+}
+
+.header-right li {
+  padding: 10px 20px;
+}
+
+.li-right {
+  font-size: 18px;
+  color: white;
+}
+
+/* --------------------メイン--------------------- */
+
+.main-section {
+  /* width: 800px; */
+  /* margin: 0 auto; */
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.main-h1{
+  margin: 50px 0 60px;
+  text-align: center;
+}
+
+.main_p {
+  width: 800px;
+  padding-bottom: 60px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 0 100px;
+}
+
+.table-td {
+  background-color: #f0f0e1;
+}
+
+table th, table td {
+  padding: 15px 47px;
+  border: solid 1px black;
+}
+/* -------------------フォトグラフィー ---------------------*/
+.photo-grid {
+  /* width: 1000px; */
+  height: 900px;
+  padding-bottom: 50px;
+  background-color: #333333;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-h2 {
+  font-size: 50px;
+  padding-bottom: 80px;
+}
+
+.photo-h2 {
+  color: white;
+}
+
+.grid-container {
+  width: 910px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 170px 170px;
+  grid-template-columns: repeat(3, minmax(0, 750px));
+  grid-gap: 3%;
+}
+
+.grid-container img {
+  cursor: pointer;
+}
+
+/* ------------------ショップ --------------------*/
+.shop {
+  width: 910px;
+  margin: 0 auto 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-h2 {
+  color: black;
+}
+
+.shop-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.li {
+  padding: 30px 10px 20px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.li span {
+  font-size: 20px;
+  text-align: center;
+}
+
+.shop7 {
+  padding: 30px 0 0 150px;
+}
+.shop8 {
+  padding: 30px 150px 0 0;
+}
+
+/* -------------------スライドショー -------------------*/
+.about {
+  height: 700px;
+  background-image: url("../img/about_visual.jpg");
+  margin-bottom: 70px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.about-p {
+  width: 500px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.about-slidder {
+  width: 1300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.slideshow {
+  display: flex;
+
+  animation-name: loop-slide;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes loop-slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.about-slidder:hover .slideshow {
+  animation-play-state: paused;
+}
+
+.content {
+  width: 270px;
+  height: 170px;
+  padding: 10px;
+}
+
+/*----------------------- youtube ----------------------*/
+.tvcm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.youtube {
+  margin-bottom: 100px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+/* ---------------------map--------------------------- */
+.map {
+  padding-bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframe-map {
+  width: 900px;
+  height: 500px;
+}
+
+/* --------------------フッター ---------------------*/
+.footer {
+  height: 300px;
+  background-color: #219cde;
+
+  position: relative;
+}
+
+.footer-btn {
+  position: absolute;
+  top: -50px;
+  left: 640px;
+}
+
+.footer-left {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
