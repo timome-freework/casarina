@@ -37,6 +37,11 @@ a {
   padding-left: 100px;
 }
 
+/* -------チェックボックスを消す　追加----- */
+.navToggle {
+  display: none;
+}
+
 .header-right {
   width: 440px;
   /* background-color: blueviolet; */
@@ -86,13 +91,11 @@ table {
 }
 
 table th, table td {
-  padding: 15px 47px;
+  padding: 15px 19px;
   border: solid 1px black;
 }
 /* -------------------フォトグラフィー ---------------------*/
 .photo-grid {
-  /* width: 1000px; */
-  height: 900px;
   padding-bottom: 50px;
   background-color: #333333;
   margin-bottom: 50px;
@@ -104,7 +107,7 @@ table th, table td {
 }
 .main-h2 {
   font-size: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 80px 0;
 }
 
 .photo-h2 {
@@ -112,16 +115,15 @@ table th, table td {
 }
 
 .grid-container {
-  width: 910px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 170px 170px;
-  grid-template-columns: repeat(3, minmax(0, 750px));
-  grid-gap: 3%;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.grid-container img {
+.grid-container > li {
   cursor: pointer;
+  padding-bottom: 30px;
 }
 
 /* ------------------ショップ --------------------*/
@@ -267,3 +269,5 @@ table th, table td {
   text-align: center;
   padding-top: 100px;
 }
+
+/* ----------------レスポンシブデザイン------------------------ */
