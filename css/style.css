@@ -12,10 +12,10 @@ a {
 
 /* ------------------------ヘッダー-------------------- */
 .header {
-  background: url("../img/photo004.jpg");
-  background-size: cover;
+  background: url("../img/photo004.jpg") center top / cover no-repeat fixed;
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   height: 100vh;
   /* background-color: pink; */
 }
@@ -34,7 +34,7 @@ a {
 
 .header-left {
   /* background-color: aqua; */
-  padding-left: 100px;
+  padding-left: 5rem;
 }
 
 /* -------チェックボックスを消す　追加----- */
@@ -43,7 +43,7 @@ a {
 }
 
 .header-right {
-  width: 440px;
+  width: 25rem;
   /* background-color: blueviolet; */
 
   display: flex;
@@ -54,7 +54,7 @@ a {
 }
 
 .li-right {
-  font-size: 18px;
+  font-size: 1.3em;
   color: white;
 }
 
@@ -81,7 +81,10 @@ a {
   padding-bottom: 60px;
 }
 
-table {
+
+.table {
+  width: 50%;
+  height: 140px;
   border-collapse: collapse;
   margin: 0 0 100px;
 }
@@ -90,10 +93,10 @@ table {
   background-color: #f0f0e1;
 }
 
-table th, table td {
-  padding: 15px 19px;
-  border: solid 1px black;
+.td {
+  text-align: center;
 }
+
 /* -------------------フォトグラフィー ---------------------*/
 .photo-grid {
   padding-bottom: 50px;
@@ -146,14 +149,9 @@ table th, table td {
   justify-content: space-between;
 }
 
-.li {
-  padding: 30px 10px 20px;
-  display: inline-flex;
-  flex-direction: column;
-}
-
-.li span {
+.li > p {
   font-size: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
