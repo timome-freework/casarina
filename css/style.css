@@ -149,6 +149,36 @@ a {
   justify-content: space-between;
 }
 
+.li_slide {
+  position: relative;
+  width: 270px;
+  height: 150px;
+  overflow: hidden;
+}
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.second:hover {
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.36);
+  animation-fill-mode: forwards;
+  /* animation-play-state: paused; */
+}
+@keyframes slide {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(300px);
+    display: none;
+  }
+}
+
 .li > p {
   font-size: 20px;
   padding-bottom: 20px;
